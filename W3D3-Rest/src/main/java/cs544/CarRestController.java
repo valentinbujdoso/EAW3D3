@@ -33,7 +33,7 @@ public class CarRestController {
         carService.update(car);
     }
 
-    @DeleteMapping("/cars/delete/{id}")
+    @DeleteMapping("/cars/{id}")
     public void delete(@PathVariable int id) {
         carService.delete(id);
     }
